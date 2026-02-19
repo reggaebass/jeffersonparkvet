@@ -28,7 +28,110 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+  :root {
+    --teal-dark: #3e6f73;
+    --teal: #6f9ea3;
+    --teal-light: #c7d6d8;
+    --panel-blue: #bfcfd2;
+    --panel-cream: #eadfd9;
+    --text-dark: #2f4f54;
+  }
 
+  body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-dark);
+    background: #ffffff;
+    line-height: 1.45;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    padding: 40px 32px 20px;
+  }
+
+  .title-main {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--teal);
+    margin: 0;
+  }
+
+  .title-sub {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--teal-dark);
+    margin: 10px 0 10px;
+  }
+
+  .clinic-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--teal-dark);
+  }
+
+  .header-note {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--teal-dark);
+    align-self: center;
+  }
+
+  /* Grid Panels */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .panel {
+    padding: 28px 30px;
+    font-size: 18px;
+  }
+
+  .panel h2 {
+    margin-top: 0;
+    font-size: 28px;
+    color: var(--teal-dark);
+  }
+
+  .panel-blue { background: var(--panel-blue); }
+  .panel-cream { background: var(--panel-cream); }
+
+  .highlight {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 18px;
+    color: var(--teal-dark);
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    .header {
+      grid-template-columns: 1fr;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .title-main { font-size: 36px; }
+    .title-sub { font-size: 32px; }
+  }
+</style>
 </head>
 
 <body>
@@ -66,7 +169,7 @@
             <ul>
               <li><a href="newclient.html">New Client Information</a></li>
               <li><a href="payment.html">Payment Policy</a></li>
-              <li><a href="COVID19.html">COVID-19 Update</a></li>
+              <li><a href="COVID19.html">Infectious Disease Prevention Policy</a></li>
             </ul>
           </li>
             <li class="drop-down"><a href="">Pet Care Resources</a>
@@ -90,10 +193,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>COVID-19 Update</h2>
+          <h2>Infectious Disease Prevention Update</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>COVID-19 Update</li>
+            <li>Infectious Disease Prevention Update</li>
           </ol>
         </div>
 
@@ -105,8 +208,98 @@
         <div class="row">
               <div class="col-xl-12 align-items-stretch">
                    <div class="col">
-                       <img src="assets/img/covid.jpeg" class="img-fluid" alt="">
+                       <div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1 class="title-main">Infectious Disease Prevention</h1>
+      <h2 class="title-sub">Updates and Protocols</h2>
+      <div class="clinic-name">Jefferson Park Veterinary Clinic</div>
+    </div>
+
+    <div class="header-note">
+      Since the COVID epidemic, the health and well-being of your pets and our staff is our highest priority.  Our procedures try to keep everyone safe. Therefore, we have adopted a “Concierge” approach at our clinic to minimize the potential spread of infectious diseases such as COVID and Influenza.  We do this to protect our team members some of whom may have immunocompromising conditions.  
+    </div>
+  </div>
+
+  <!-- Panels -->
+  <div class="grid">
+
+    <div class="panel panel-blue">
+      <h2>Hours</h2>
+      <p>
+        Monday – Friday 9:30 AM – 6:00 PM<br />
+        Saturday – CLOSED.<br />
+        Sunday – CLOSED.
+      </p>
+    </div>
+
+    <div class="panel panel-blue">
+      <h2>Procedures for your Pet’s Vet Visit – “Concierge Service”</h2>
+      <p>
+        We make appointments for pets by phone and will provide
+        top-notch medical care.
+      </p>
+      <p>
+        We have a ‘Concierge’ approach at our clinic to prevent the
+        potential community spread of COVID, Influenza and other infectious diseases.
+        These precautions are to ensure the health and safety of humans and pets
+        within our facility.
+      </p>
+    </div>
+
+    <div class="panel panel-cream">
+      <div class="highlight">
+        If you have ANY signs of “a cold”, fever, muscle ache, please STAY HOME.
+      </div>
+      <p>
+        It is best to have a well friend or relative bring your pet to the clinic.
+      </p>
+    </div>
+
+    <div class="panel panel-cream">
+      <h2>Only patients (pets) are allowed inside our clinic.</h2>
+      <p>
+        Before you come to the clinic, wash your hands thoroughly. If you have a
+        mask please put it on when our staff or doctor greets you. Humans shall remain
+        outside on the front porch or in your car. Since concierge appointments take slightly longer, 
+        you are welcome to drop your pet off at the
+        clinic for your convenience. After the doctor evaluates your pet, she will call you to discuss the findings and treatment plan. 
+      </p>
+    </div>
+
+    <div class="panel panel-blue" style="grid-column: 1 / -1;">
+      <h2>When you arrive:</h2>
+      <p>
+        Please call our hospital at 916-371-9400, from the parking lot. The
+        doctor or staff member will take a brief history over the phone about
+        your pet’s health issue while you are in your car. Make sure your kitty
+        is in a carrier and your dog is on a leash with collar or harness. We
+        prefer not to take a pet from someone's arms.
+      </p>
+      <p>
+        You will then bring your pet to the front porch, meet a staff member at
+        the door. Staff will bring your pet into the clinic. Once your pet is
+        inside, the doctor evaluates your pet, updates you, by phone, on your
+        pet’s condition and recommends a treatment plan. Credit card payments
+        will be made by phone. Cash is also as easy option, as well.
+      </p>
+      <p>
+        We appreciate your help and cooperation with these new procedures to
+        keep everyone healthy .
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    The Doctors and Staff at Jefferson Park Veterinary Clinic, West Sacramento
+  </div>
+
 </div>
+
            <div class="col">
       </div>
 
